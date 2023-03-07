@@ -1,5 +1,5 @@
 FROM tomcat:8.0-alpine
-MAINTAINER "koti"
-COPY . /usr/local/tomcat/webapps
+MAINTAINER "koti@gmail.com"
+COPY **/*.war /usr/local/tomcat/webapps/app.war
 CMD ["catalina.sh" "run"]
 EXPOSE 8080
