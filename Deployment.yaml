@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: mawebappdeployment
+ name: mavwebappdeployment
 spec:
  replicas: 1
  strategy: 
     type: Recreate
  selector: 
    matchLabels: 
-     app: mawebapp
+     app: mavwebapp
  template:
   metadata:
-   name: mawebapppod
+   name: mavwebapppod
    labels:
-     app: mawebapp	 
+     app: mavwebapp	 
   spec: 
     containers:
-    - name: mawebappcontainer
+    - name: mavwebappcontainer
       image: koteswarararaosairi/pavan
       ports:
       - containerPort: 8080
@@ -25,13 +25,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
- name: mawebappsvc
+ name: mavwebappsvc
 spec:
   type: NodePort
   selector:
-   app: mawebapp
+   app: mavwebapp
   ports:
    - port: 80
      targetPort: 8080
-     nodePort: 30736
+     nodePort: 30036
 ...
