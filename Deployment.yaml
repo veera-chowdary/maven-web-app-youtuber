@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: kotiwebappdeployment
+ name: gabberwebappdeployment
 spec:
  replicas: 1
  strategy: 
     type: Recreate
  selector: 
    matchLabels: 
-     app: kotiwebapp
+     app: gabberwebapp
  template:
   metadata:
-   name: kotiwebapppod
+   name: gabberwebapppod
    labels:
-     app: kotiwebapp	 
+     app: gabberwebapp	 
   spec: 
     containers:
-    - name: kotiwebappcontainer
+    - name: gabberwebappcontainer
       image:  koteswarararaosairi/pavan
       ports:
       - containerPort: 8080
@@ -25,11 +25,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
- name: kotiwebappsvc
+ name: gabberwebappsvc
 spec:
   type: NodePort
   selector:
-   app: mavenwebapp
+   app: gabberwebapp
   ports:
    - port: 80
      targetPort: 8080
