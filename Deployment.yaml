@@ -1,37 +1,36 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: gabbwebappdeployment
+  name:  mewebappdeploy
+  labels:
+    name:  mewebapp
 spec:
- replicas: 1
- strategy: 
-    type: Recreate
- selector: 
-   matchLabels: 
-     app: gabbwebapp
- template:
-  metadata:
-   name: gabbwebapppod
-   labels:
-     app:gabbwebapp	 
-  spec: 
-    containers:
-    - name: gabbwebappcontainer
-      image:  koteswarararaosairi/pavan
-      ports:
-      - containerPort: 8080
----
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        name: mewebapp
+    spec:
+      containers:
+      - image:  koteswarararaosairi/pavan
+        name:  mewebapp
+ ---
+ ---
 apiVersion: v1
 kind: Service
 metadata:
- name: gabbwebappsvc
+  name:  mewebappservice
 spec:
-  type: NodePort
   selector:
-   app: gabbwebapp
+    app:  Selector Label
+  type:   NodePort
   ports:
-   - port: 80
-     targetPort: 8080
-     nodePort: 30736
-...
+  - name: mewebapp
+    port:  80
+    targetPort:  8080
+    nodeport: 30736
+ ---
