@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: mavenwebappdeployment
+ name: kotiwebappdeployment
 spec:
  replicas: 1
  strategy: 
     type: Recreate
  selector: 
    matchLabels: 
-     app: mavenwebapp
+     app: kotiwebapp
  template:
   metadata:
-   name: mavenwebapppod
+   name: kotiwebapppod
    labels:
-     app: mavenwebapp	 
+     app: kotiwebapp	 
   spec: 
     containers:
-    - name: mavenwebappcontainer
+    - name: kotiwebappcontainer
       image:  koteswarararaosairi/pavan
       ports:
       - containerPort: 8080
@@ -33,5 +33,5 @@ spec:
   ports:
    - port: 80
      targetPort: 8080
-     nodePort: 30736
+     nodePort: 30737
 ...
