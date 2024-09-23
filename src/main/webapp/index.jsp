@@ -13,6 +13,7 @@
       color: #333;
       overflow: hidden; /* Prevent scrollbars from appearing */
       position: relative;
+      background-color: black; /* Fallback color */
     }
 
     /* Starry Background */
@@ -20,9 +21,9 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: black;
-      overflow: hidden;
       z-index: 0;
+      overflow: hidden;
+      background: black;
     }
 
     .star {
@@ -30,7 +31,8 @@
       background: white;
       border-radius: 50%;
       opacity: 0.7;
-      animation: twinkling 1.5s infinite alternate;
+      animation: twinkling 2s infinite alternate;
+      filter: blur(1px); /* Adds a soft glow effect */
     }
 
     @keyframes twinkling {
@@ -109,7 +111,7 @@
     }
 
     .responsive-img {
-      max-width: 80%; /* Decreased size */
+      max-width: 50%; /* Decreased size */
       height: auto;
       border-radius: 10px;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
