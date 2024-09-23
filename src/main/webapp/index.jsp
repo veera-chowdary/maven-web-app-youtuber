@@ -104,10 +104,12 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #333;
+      background-color: rgba(51, 51, 51, 0.9);
       color: white;
       margin-top: 30px;
       z-index: 1;
+      position: relative;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
     }
 
     .responsive-img {
@@ -115,6 +117,27 @@
       height: auto;
       border-radius: 10px;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Particle Effect */
+    .particle {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      animation: float 4s infinite;
+      filter: blur(1px);
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -153,6 +176,16 @@
 <footer>
   &copy; 2024 RR Technosoft Institute. All rights reserved.
 </footer>
+
+<!-- Particle Effects -->
+<div class="particles">
+  <div class="particle" style="width: 5px; height: 5px; top: 10%; left: 20%; animation-delay: 0s;"></div>
+  <div class="particle" style="width: 3px; height: 3px; top: 30%; left: 50%; animation-delay: 0.2s;"></div>
+  <div class="particle" style="width: 2px; height: 2px; top: 70%; left: 80%; animation-delay: 0.4s;"></div>
+  <div class="particle" style="width: 4px; height: 4px; top: 40%; left: 10%; animation-delay: 0.6s;"></div>
+  <div class="particle" style="width: 5px; height: 5px; top: 20%; left: 60%; animation-delay: 0.8s;"></div>
+  <div class="particle" style="width: 2px; height: 2px; top: 80%; left: 30%; animation-delay: 1s;"></div>
+</div>
 
 </body>
 </html>
