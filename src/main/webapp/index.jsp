@@ -13,16 +13,18 @@
       color: #333;
       overflow: hidden; /* Prevent scrollbars from appearing */
       position: relative;
+      background-image: url('https://your-background-image-url.jpg'); /* Replace with your background image URL */
+      background-size: cover;
+      background-position: center;
     }
 
-    /* Starry Background */
+    /* Starry Effects */
     .stars {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: black;
-      overflow: hidden;
       z-index: 0;
+      overflow: hidden;
     }
 
     .star {
@@ -109,7 +111,7 @@
     }
 
     .responsive-img {
-      max-width: 80%; /* Decreased size */
+      max-width: 60%; /* Adjusted size */
       height: auto;
       border-radius: 10px;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
