@@ -10,15 +10,24 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
+      background: linear-gradient(270deg, #ff4d4d, #f9d423, #24c6dc);
+      background-size: 600% 600%;
+      animation: gradientShift 10s ease infinite;
       color: #333;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
       text-align: center;
-      background-color: #ff4d4d;
+      background-color: rgba(255, 77, 77, 0.9);
       padding: 20px;
       color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     header h1 {
@@ -38,17 +47,19 @@
     }
 
     .cta-button {
-      background-color: #ff4d4d;
+      background-color: rgba(255, 77, 77, 0.9);
       color: white;
       padding: 15px 25px;
       text-decoration: none;
       font-size: 1.2em;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .cta-button:hover {
       background-color: #cc0000;
+      transform: scale(1.05);
     }
 
     .contact-info {
@@ -67,6 +78,8 @@
     .responsive-img {
       max-width: 100%;
       height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
@@ -81,7 +94,7 @@
   <h2>Learn Here.. Lead Anywhere..!!</h2>
 
   <a href="https://www.rrtechnosoft.in" class="cta-button">
-    Click Here To See "RR Technosoft Institute Details" 
+    Click Here To See "RR Technosoft Institute Details"
   </a>
 
   <div class="contact-info">
