@@ -6,81 +6,87 @@
     <title>RR Technosoft Institute</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-image: url('YOUR_IMAGE_URL_HERE'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-        }
-
-        header {
-            background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
-            padding: 20px;
             text-align: center;
         }
-
-        header h1 {
+        
+        header {
+            background-color: #0073e6;
             color: white;
-            font-size: 36px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
             margin: 0;
         }
+        
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 5px;
+        }
 
-        h2 {
-            color: #4CAF50;
-            text-align: center;
+        section {
+            padding: 50px;
         }
 
         a {
-            display: block;
-            text-align: center;
-            padding: 15px;
-            background-color: #007BFF;
-            color: white;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 8px;
-            width: 60%;
-            margin: 20px auto;
-            transition: background-color 0.3s;
+            color: white;
+            background-color: #ff5722;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
         }
 
         a:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(76, 175, 80, 0.8);
-            color: white;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            background-color: #e64a19;
         }
 
         .contact {
-            text-align: center;
-            font-size: 20px;
+            font-size: 1.3rem;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Welcome to RR Technosoft Institute</h1>
+        <h2>Multi-Cloud with DevOps Class</h2>
     </header>
 
-    <h2>Learn Here.. Lead Anywhere..!!</h2>
+    <section>
+        <p>Learn Here... Lead Anywhere...!!</p>
+        <a href="https://www.rrtechnosoft.in" target="_blank">RR Technosoft Institute Details</a>
 
-    <a href="https://www.rrtechnosoft.in">Click Here to See RR Technosoft Institute Details ☛☛☛</a>
-
-    <div class="contact">
-        <h2>Call Us: +91 - 76800 01943</h2>
-    </div>
+        <div class="contact">
+            <h2>Call Us: +91-76800 01943</h2>
+        </div>
+    </section>
 
     <footer>
-        © 2024 RR Technosoft Institute. All rights reserved.
+        <p>&copy; 2024 RR Technosoft Institute | Multi-Cloud with DevOps</p>
     </footer>
+
 </body>
 </html>
