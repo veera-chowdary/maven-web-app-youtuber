@@ -7,14 +7,16 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            background-image: url('YOUR_IMAGE_URL_HERE'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
             color: #333;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
             padding: 20px;
             text-align: center;
         }
@@ -51,7 +53,7 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4CAF50;
+            background-color: rgba(76, 175, 80, 0.8);
             color: white;
             position: absolute;
             width: 100%;
