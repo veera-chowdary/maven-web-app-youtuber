@@ -3,90 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RR Technosoft Institute</title>
+    <title>RR Technosoft - Multi-Cloud with DevOps</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
+            color: #333;
             margin: 0;
             padding: 0;
+        }
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            color: red;
+        }
+        h2 {
+            color: #555;
+        }
+        .content {
+            padding: 40px;
             text-align: center;
         }
-        
-        header {
-            background-color: #0073e6;
+        .link {
+            background-color: #007bff;
             color: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        
-        header h2 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-top: 5px;
-        }
-
-        section {
-            padding: 50px;
-        }
-
-        a {
+            padding: 10px 20px;
             text-decoration: none;
-            color: white;
-            background-color: #ff5722;
-            padding: 15px 25px;
             border-radius: 5px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
         }
-
-        a:hover {
-            background-color: #e64a19;
+        .link:hover {
+            background-color: #0056b3;
         }
-
-        .contact {
-            font-size: 1.3rem;
-            color: #333;
-            margin-top: 30px;
-        }
-
         footer {
-            background-color: #333;
+            background-color: #222;
             color: white;
-            padding: 15px 0;
-            margin-top: 50px;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
-
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
+        .call {
+            font-size: 18px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to RR Technosoft Institute</h1>
-        <h2>Multi-Cloud with DevOps Class</h2>
-    </header>
+<header>
+    <h1>Welcome to RR Technosoft Institute</h1>
+    <h2>Multi-Cloud with DevOps Class</h2>
+</header>
 
-    <section>
-        <p>Learn Here... Lead Anywhere...!!</p>
-        <a href="https://www.rrtechnosoft.in" target="_blank">RR Technosoft Institute Details</a>
+<div class="content">
+    <img src="https://www.rrtechnosoft.in/images/main-slider/pic1.png" alt="RR Technosoft Banner" width="600">
+    
+    <h2>Learn Here.. Lead Anywhere..!!</h2>
 
-        <div class="contact">
-            <h2>Call Us: +91-76800 01943</h2>
-        </div>
-    </section>
+    <a href="https://www.rrtechnosoft.in" class="link">
+        ☛☛☛ Click Here To See RR Technosoft Institute Details
+    </a>
 
-    <footer>
-        <p>&copy; 2024 RR Technosoft Institute | Multi-Cloud with DevOps</p>
-    </footer>
+    <div class="call">
+        <h2>Call Us: +91 - 76800 01943</h2>
+    </div>
+</div>
+
+<footer>
+    © 2024 RR Technosoft Institute. All rights reserved.
+</footer>
 
 </body>
 </html>
