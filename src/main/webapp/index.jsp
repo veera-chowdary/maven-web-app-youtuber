@@ -10,13 +10,13 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(270deg, #ff4d4d, #f9d423, #24c6dc);
-      background-size: 600% 600%;
-      animation: gradientShift 10s ease infinite;
       color: #333;
+      background: linear-gradient(270deg, #ff4d4d, #24c6dc, #f9d423, #ff4d4d);
+      background-size: 800% 800%;
+      animation: backgroundVFX 12s ease infinite;
     }
 
-    @keyframes gradientShift {
+    @keyframes backgroundVFX {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
@@ -24,10 +24,10 @@
 
     header {
       text-align: center;
-      background-color: rgba(255, 77, 77, 0.9);
+      background-color: rgba(255, 77, 77, 0.85);
       padding: 20px;
       color: white;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
@@ -54,7 +54,7 @@
       font-size: 1.2em;
       border-radius: 5px;
       transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     .cta-button:hover {
@@ -67,19 +67,20 @@
       font-size: 1.2em;
     }
 
+    .responsive-img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #333;
       color: white;
       margin-top: 30px;
-    }
-
-    .responsive-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
