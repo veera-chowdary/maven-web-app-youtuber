@@ -36,26 +36,26 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2em; /* Adjusted for responsiveness */
       text-transform: uppercase;
     }
 
     header h2 {
-      font-size: 1.5em;
+      font-size: 1.2em; /* Adjusted for responsiveness */
       margin-top: 5px;
     }
 
     main {
       text-align: center;
-      padding: 30px;
+      padding: 20px;
     }
 
     .cta-button {
       background-color: #ff4d4d;
       color: white;
-      padding: 15px 25px;
+      padding: 10px 20px; /* Adjusted for smaller screens */
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1em; /* Adjusted for responsiveness */
       border-radius: 5px;
       transition: background-color 0.3s ease, transform 0.3s ease;
     }
@@ -66,20 +66,20 @@
     }
 
     .contact-info {
-      margin-top: 20px;
-      font-size: 1.2em;
+      margin-top: 15px;
+      font-size: 1em; /* Adjusted for responsiveness */
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 15px; /* Adjusted for smaller screens */
       background-color: #333;
       color: white;
       margin-top: 30px;
     }
 
     .responsive-img {
-      max-width: 60%; /* Decreased size */
+      max-width: 80%; /* Adjusted for mobile */
       height: auto;
       border-radius: 10px;
       animation: zoomIn 0.5s;
@@ -90,6 +90,33 @@
       to { transform: scale(1); }
     }
 
+    /* Media Queries for Responsiveness */
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      header h2 {
+        font-size: 1.5em;
+      }
+
+      .cta-button {
+        padding: 15px 25px;
+        font-size: 1.2em;
+      }
+
+      .contact-info {
+        font-size: 1.2em;
+      }
+
+      footer {
+        padding: 20px;
+      }
+
+      .responsive-img {
+        max-width: 60%; /* Larger images on laptops */
+      }
+    }
   </style>
 </head>
 <body>
@@ -103,7 +130,7 @@
   <h2>Learn Here.. Lead Anywhere..!!</h2>
 
   <a href="https://www.rrtechnosoft.in" class="cta-button">
-   Click Here To See "RR Technosoft Institute Details" 
+    ☛☛☛ Click Here To See "RR Technosoft Institute Details" 
   </a>
 
   <div class="contact-info">
