@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="RR Technosoft Institute - Learn Multi-Cloud and DevOps to Lead Anywhere!">
+
   <title>RR Technosoft Institute - Multi-Cloud with DevOps</title>
   <style>
     body {
@@ -12,6 +13,12 @@
       padding: 0;
       background-color: #f4f4f9;
       color: #333;
+      animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     header {
@@ -19,10 +26,12 @@
       background-color: #ff4d4d;
       padding: 20px;
       color: white;
+      animation: slideDown 0.5s;
     }
 
-    header h1, header h2 {
-      animation: fadeIn 1s ease forwards;
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
 
     header h1 {
@@ -48,13 +57,12 @@
       text-decoration: none;
       font-size: 1.2em;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
-      animation: fadeIn 1s ease forwards;
-      animation-delay: 0.5s;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .cta-button:hover {
       background-color: #cc0000;
+      transform: scale(1.05);
     }
 
     .contact-info {
@@ -71,28 +79,17 @@
     }
 
     .responsive-img {
-      max-width: 80%;
+      max-width: 60%; /* Decreased size */
       height: auto;
-      transition: transform 0.3s ease;
+      border-radius: 10px;
+      animation: zoomIn 0.5s;
     }
 
-    .responsive-img:hover {
-      transform: scale(1.05);
+    @keyframes zoomIn {
+      from { transform: scale(0); }
+      to { transform: scale(1); }
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .parallax {
-      background-image: url('path/to/your/parallax-image.jpg');
-      height: 400px;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
   </style>
 </head>
 <body>
@@ -106,7 +103,7 @@
   <h2>Learn Here.. Lead Anywhere..!!</h2>
 
   <a href="https://www.rrtechnosoft.in" class="cta-button">
-     Click Here To See "RR Technosoft Institute Details" 
+   Click Here To See "RR Technosoft Institute Details" 
   </a>
 
   <div class="contact-info">
@@ -118,11 +115,9 @@
 
 </main>
 
-<div class="parallax"></div>
-
 <footer>
   &copy; 2024 RR Technosoft Institute. All rights reserved.
 </footer>
 
 </body>
-</html
+</html>
