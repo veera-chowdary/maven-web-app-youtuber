@@ -10,57 +10,15 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f9;
       color: #333;
-      overflow: hidden; /* Prevent scrollbars from appearing */
-      position: relative;
-      background-color: black; /* Fallback color */
     }
-
-    /* Starry Background */
-    .stars {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      overflow: hidden;
-      background: black;
-    }
-
-    .star {
-      position: absolute;
-      background: white;
-      border-radius: 50%;
-      opacity: 0.7;
-      animation: twinkling 2s infinite alternate;
-      filter: blur(1px); /* Adds a soft glow effect */
-    }
-
-    @keyframes twinkling {
-      0% {
-        transform: scale(1);
-        opacity: 0.7;
-      }
-      100% {
-        transform: scale(1.5);
-        opacity: 0;
-      }
-    }
-
-    /* Randomly position stars */
-    .star:nth-child(1) { width: 2px; height: 2px; top: 10%; left: 20%; animation-delay: 0s; }
-    .star:nth-child(2) { width: 3px; height: 3px; top: 30%; left: 50%; animation-delay: 0.2s; }
-    .star:nth-child(3) { width: 1px; height: 1px; top: 70%; left: 80%; animation-delay: 0.4s; }
-    .star:nth-child(4) { width: 4px; height: 4px; top: 40%; left: 10%; animation-delay: 0.6s; }
-    .star:nth-child(5) { width: 5px; height: 5px; top: 20%; left: 60%; animation-delay: 0.8s; }
-    .star:nth-child(6) { width: 2px; height: 2px; top: 80%; left: 30%; animation-delay: 1s; }
 
     header {
       text-align: center;
-      background-color: rgba(255, 77, 77, 0.8);
+      background-color: #ff4d4d;
       padding: 20px;
       color: white;
-      position: relative;
-      z-index: 1;
     }
 
     header h1 {
@@ -77,19 +35,16 @@
     main {
       text-align: center;
       padding: 30px;
-      position: relative;
-      z-index: 1;
     }
 
     .cta-button {
-      background-color: rgba(255, 77, 77, 0.9);
+      background-color: #ff4d4d;
       color: white;
       padding: 15px 25px;
       text-decoration: none;
       font-size: 1.2em;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .cta-button:hover {
@@ -104,53 +59,18 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: rgba(51, 51, 51, 0.9);
+      background-color: #333;
       color: white;
       margin-top: 30px;
-      z-index: 1;
-      position: relative;
-      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
     }
 
     .responsive-img {
-      max-width: 50%; /* Decreased size */
+      max-width: 100%;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Particle Effect */
-    .particle {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 50%;
-      animation: float 4s infinite;
-      filter: blur(1px);
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-      }
     }
   </style>
 </head>
 <body>
-
-<div class="stars">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-</div>
 
 <header>
   <h1>Welcome to RR Technosoft Institute</h1>
@@ -161,7 +81,7 @@
   <h2>Learn Here.. Lead Anywhere..!!</h2>
 
   <a href="https://www.rrtechnosoft.in" class="cta-button">
-    Click Here To See "RR Technosoft Institute Details" 
+    ☛☛☛ Click Here To See "RR Technosoft Institute Details" 
   </a>
 
   <div class="contact-info">
@@ -176,16 +96,6 @@
 <footer>
   &copy; 2024 RR Technosoft Institute. All rights reserved.
 </footer>
-
-<!-- Particle Effects -->
-<div class="particles">
-  <div class="particle" style="width: 5px; height: 5px; top: 10%; left: 20%; animation-delay: 0s;"></div>
-  <div class="particle" style="width: 3px; height: 3px; top: 30%; left: 50%; animation-delay: 0.2s;"></div>
-  <div class="particle" style="width: 2px; height: 2px; top: 70%; left: 80%; animation-delay: 0.4s;"></div>
-  <div class="particle" style="width: 4px; height: 4px; top: 40%; left: 10%; animation-delay: 0.6s;"></div>
-  <div class="particle" style="width: 5px; height: 5px; top: 20%; left: 60%; animation-delay: 0.8s;"></div>
-  <div class="particle" style="width: 2px; height: 2px; top: 80%; left: 30%; animation-delay: 1s;"></div>
-</div>
 
 </body>
 </html>
