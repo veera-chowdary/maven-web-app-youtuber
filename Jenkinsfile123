@@ -1,19 +1,36 @@
-node {
-        
-        stage ('checkout') {
+pipeline {
+    agent any 
+    stages {
+        stage ('checkout ') {
+            steps {
                 git 'https://github.com/koteswararao73/maven-web-app-youtuber.git'
             }
-
-        
+        }
         stage ('build ') {
-            
-         
-                sh ''' mvn clean  package '''
+            steps {
+               sh ''' mvn compile '''   
             }
+        }
+         stage ('artifact ') {
+            steps {
+               sh ''' mvn clean package '''   
+            }
+        }
         
-        stage ('deploy into tomcat') {
-                
-                deploy adapters: [tomcat9(credentialsId: 'jenkinstotomcat', path: '', url: 'http://52.66.133.118:8080/')], contextPath: null, war: '**/*.war'
-                
+         stage ('docker image ') {
+            steps {
+               sh '''docker build -t sai . '''   
             }
+        }
+        
+         stage ('deploying ') {
+            steps {
+               sh ''' docker run --name sai-con -d -p 9998:8080 sai  '''   
+            }
+        }
+         
+        
+        
+    }
 }
+    
