@@ -19,13 +19,13 @@ pipeline {
         
          stage ('docker image ') {
             steps {
-               sh '''docker build -t sai . '''   
+               sh '''docker build -t sai123 . '''   
             }
         }
         
          stage ('deploying ') {
             steps {
-               sh ''' docker run --name sai-con -d -p 9998:8080 sai  '''   
+               sh ''' docker run --name sai-con -d -p 9997:8080 sai123  '''   
             }
         }
          
