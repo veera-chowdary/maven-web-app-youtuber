@@ -1,4 +1,4 @@
-pipeline {
+cdccdcpipeline {
     agent any 
     stages {
         stage ('checkout ') {
